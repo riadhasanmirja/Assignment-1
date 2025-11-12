@@ -1,12 +1,20 @@
 #include <stdio.h>
-
 int main()
 {
-    int a = 8;
-    int b = 5;
+    int a;
+    int b;
     
-    printf ("Before Swap : a = %d , b = %d\n",a,b);
-    printf ("After Swap : a = %d , b = %d\n",b,a);
+    printf ("Enter Your Value a = ");
+    scanf("%d",&a);
+    
+    printf ("Enter Your Value b = ");
+    scanf("%d",&b);
+    
+    a = a + b;
+    b = a - b;
+    a = a - b;
+     
+    printf("After Swapping Value is a = %d, b = %d",a,b);
     
     return 0;
 }
